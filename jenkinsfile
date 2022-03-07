@@ -28,9 +28,9 @@ pipeline {
         }
 
         stage('Build') {
-            when {
-                environment name: 'IMAGE_EXISTS', value: '1'
-            }
+            // when {
+            //     environment name: 'IMAGE_EXISTS', value: '1'
+            // }
             steps {
                 sh label: 'Build', script: "docker --config ./ build -t  us.icr.io/apihub-cr/dev-pg/playground-theia-utilities:latest ."
                 sh label: 'Push Image', script: "docker --config ./ push  us.icr.io/apihub-cr/dev-pg/playground-theia-utilities:latest"
