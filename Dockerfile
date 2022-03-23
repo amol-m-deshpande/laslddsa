@@ -28,7 +28,7 @@ RUN wget https://github.com/IBM/cpdctl/releases/download/v1.1.132/cpdctl_linux_a
 RUN tar zxf cpdctl_linux_amd64.tar.gz
 
 
-COPY github.sh /usr/local/bin/gitinit
-RUN chown root: /usr/local/bin/gitinit
+COPY github.sh /
+# RUN chown root: /usr/local/bin/gitinit
 
 CMD sleep infinity

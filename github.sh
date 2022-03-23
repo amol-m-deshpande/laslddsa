@@ -1,9 +1,9 @@
 #!/bin/bash  
   
 # Read the user input   
-echo "Enter the git username: "  
+echo "Enter Github username: "  
 read username  
-echo "Enter the github auth token:"  
+echo "Enter personal access token:"  
 read git_token
 echo "Enter the name of the repo"  
 read repo_name
@@ -14,8 +14,4 @@ curl -H 'Authorization: token '${git_token}'' https://api.github.com/user/repos 
 
 git commit -am "local change update"
 
-
 git push https://user_name:$git_token@github.com/$username/$repo_name.git
- 
-
-
