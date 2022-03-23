@@ -31,4 +31,4 @@ RUN tar zxf cpdctl_linux_amd64.tar.gz
 COPY github.sh /
 # RUN chown root: /usr/local/bin/gitinit
 
-CMD sleep infinity
+CMD sleep infinityssss
