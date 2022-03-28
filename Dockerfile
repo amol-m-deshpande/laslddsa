@@ -26,9 +26,8 @@ RUN sudo ./aws/install
 
 RUN wget https://github.com/IBM/cpdctl/releases/download/v1.1.132/cpdctl_linux_amd64.tar.gz 
 RUN tar zxf cpdctl_linux_amd64.tar.gz
-
-
+RUN cp cpdctl /usr/local/bin/
 COPY github.sh /
 # RUN chown root: /usr/local/bin/gitinit
 
-CMD sleep infinityssss
+CMD sleep infinity
